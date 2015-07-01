@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<title></title>
+		<style type="text/css">
+			.one {
+				overflow: hidden;
+				height: 30px;
+			   }
+			.one p {
+				position: relative;
+				float: left;
+				display: inline-block;
+				width: 200px;
+				 white-space:nowrap;
+			}
+			.btn{
+				padding: 0;
+				border: 0;
+				margin: 10px 0;
+			}
+			.animation {
+				-webkit-animation: fadeOutLeftBig 1s .1s ease both;
+				-moz-animation: fadeOutLeftBig 1s .1s ease both;
+			}
+			@-webkit-keyframes fadeOutLeftBig {
+				-webkit-transition: width 1s;
+				0% {
+					opacity: 1;
+					-webkit-transform: translateX(0);
+					width: 0;
+				}
+				50% {
+					opacity: 0.8;
+					-webkit-transform: translateX(-600px);
+					width: 0;
+				}
+				100% {
+					opacity: 0;
+					-webkit-transform: translateX(-1100px);
+					width: 0;
+				}
+			}
+			@-moz-keyframes fadeOutLeftBig {
+				-moz-transition: width 1s;
+				0% {
+					opacity: 1;
+					-webkit-transform: translateX(0);
+					width: 0;
+				}
+				50% {
+					opacity: 0.8;
+					-webkit-transform: translateX(-600px);
+					width: 0;
+				}
+				100% {
+					opacity: 0;
+					-webkit-transform: translateX(-1100px);
+					width: 0;
+				}
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<div id="target" class="container text-center one">
+			<p class="btn">第一次</p>
+			<p class="btn">第二次</p>
+			<p class="btn">第三次</p>
+			<p class="btn">第四次</p>
+			<p class="btn">第五次</p>
+			<p class="btn">第六次</p>
+			<p class="btn">第七次</p>
+			<p class="btn">第八次</p>
+		</div>
+
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/carousel.js"></script>
+		<script>
+		       $(document).ready(function(){
+		       	$("#target").carousel();
+		       });
+		</script>
+
+	</body>
+
+</html>
+
+	
+
+		
